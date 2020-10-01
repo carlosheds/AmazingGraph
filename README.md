@@ -1,3 +1,6 @@
+# Credits
+<details><summary>CLICK</summary>
+  <p>
 <br />
 <p align="center">
   <a href="http://www.freepik.com">
@@ -77,3 +80,13 @@ Capture a screenshot, gif or video and share your result in Linkedin<br>
 Send me a feedback in  <a href="https://www.linkedin.com/in/lorenagmontes/">Linkedin</a>!<br>
 
 Designed and created by  <a href="https://github.com/Lorenalgm">Lorena</a> :)
+
+</p>
+</details>
+
+# Choices
+## Mobile
+Comecei por aqui (mobile first). Foi a parte menos complicada, apenas apliquei um ```display:flex;``` juntamente com ```flex-direction:column;``` na classe ```.container``` que continha as tags ```<header>, <section> ``` do site. <p>Coloquei a imagem numa ```<img>``` dentro da ```<section>```. O botão do menu adicionei criando 4 ```<div>``` sem conteúdo no html e tirei o display da ```<nav>``` via CSS.
+
+## Responsive
+Removi o display da tag de imagem e a coloquei via CSS como imagem de fundo ```background-image:;``` 
