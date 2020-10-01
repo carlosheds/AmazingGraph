@@ -47,12 +47,74 @@ header nav {
     width: 60%;
     background-color: black;
     margin: 3px auto;
+
+    transition: .3s;
 }
 
 .menu-toggle {
     width: 40px;
     cursor: pointer;
 }
+
+.menu-section.on {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: var(--biruleibe);
+
+    z-index: 100;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-section.on nav {
+    display: block;
+}
+
+.menu-section.on nav ul {
+    list-style: none;
+    text-align: center;
+}
+.menu-section.on nav ul a {
+    padding: 30px;
+    text-decoration: none;
+    color: var(--gray);
+    transition-duration: .5s;
+    font-size: 3rem;
+    line-height: 10rem;
+    border-bottom: 2px solid black;
+}
+
+.menu-section.on nav ul a:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-section.on .menu-toggle {
+    position: absolute;
+    right: 20px;
+    top: 52px;
+}
+
+.menu-section.on .menu-toggle .one {
+    transform: rotate(45deg) translate(8px, 2px);
+}
+.menu-section.on .menu-toggle .two {
+    opacity: 0;
+}
+.menu-section.on .menu-toggle .three {
+    transform: rotate(-45deg) translate(7px, 0px);
+}
+.menu-section.on .menu-toggle .four {
+    opacity: 0;
+}
+
 
 .content {
     align-self: center;
@@ -94,3 +156,86 @@ header nav {
     border-radius: 20px;
     margin-top:25px;
 }
+
+
+
+@media (min-width:769px) {
+    html {
+        font-size: 100%;
+    }
+    .container {
+        /* width: 100%; */
+        /* min-width: 840px; */
+        height: 100vh;
+        margin: 0 auto;
+        padding: 0 50px;
+        background-image: url(./assets/team.jpg);
+        background-repeat: no-repeat;
+        background-position-x: right;
+        background-position-y: 280px;
+        background-size: 60%;
+
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+    }
+
+    header nav ul {
+        display: flex;
+    }
+
+    header nav ul li {
+        list-style: none;
+    }
+    header nav ul li a{
+        text-decoration: none;
+        font-size: 2.5rem;
+        padding: 0 10px;
+        color: black;
+        margin: 0 10px;
+    }
+
+    .content img {
+        display: none;
+    }
+
+    .content {
+        align-items: flex-start;
+        align-self: flex-start;
+        max-width: 100vw;
+        margin-left: 50px;
+    }
+
+    .content h1,.content p{
+        text-align: left;
+        width: 50vw;
+    }
+
+    .content h1 {
+        font-size: 8rem;
+    }
+
+    .content p {
+        max-width: 80%;
+        text-align: left;
+        font-size: 3rem;
+        margin-bottom: 30px;
+    }
+
+}
+
+@media (min-width:770px) and (max-width:1400px) {
+    html {
+        font-size: 70%;
+    }
+
+    .content p {
+        max-width: 60%;
+    }
+}
+
