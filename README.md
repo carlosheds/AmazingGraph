@@ -84,6 +84,8 @@ Designed and created by  <a href="https://github.com/Lorenalgm">Lorena</a> :)
 </p>
 </details>
 
+# [Result](https://carlosheds.github.io/AmazingGraph/)
+
 # Choices
 ## Mobile
 Comecei por aqui (mobile first). Foi a parte menos complicada, apenas apliquei um ```display:flex;``` juntamente com ```flex-direction:column;``` na classe ```.container``` que continha as tags ```<header>, <section> ``` do site.<p>Coloquei a imagem numa ```<img>``` dentro da ```<section>```. O botão do menu adicionei criando 4 ```<div>``` sem conteúdo no html e tirei o display da ```<nav>``` via CSS. Adicionei uma funcionalidade simples que aprendi essa semana com Javascript, onde ao clicar no botão do menu,faz aparecer uma ```<div>``` com o conteúdo da ```<nav>``` dentro.</p>
